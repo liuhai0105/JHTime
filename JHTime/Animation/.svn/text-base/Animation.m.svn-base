@@ -1,0 +1,62 @@
+//
+//  Animation.m
+//  ggg
+//
+//  Created by Hai L on 11-12-11.
+//  Copyright 2011年 __MyCompanyName__. All rights reserved.
+//
+
+#import "Animation.h"
+#import <QuartzCore/QuartzCore.h>
+
+@implementation Animation
+
+
++(NSString*)AnimationIndex:(int)index
+{
+    
+    NSString* string = [[NSString alloc]init];
+    switch (index) {
+        case 0:
+            string = kCATransitionFade;
+            break;
+        case 1:
+            string = kCATransitionPush;
+            break;
+        case 2:
+            string = kCATransitionReveal;
+            break;
+        case 3:
+            string = kCATransitionMoveIn;
+            break;
+        case 4:
+            string = @"cube";
+            break;
+        case 5:
+            string = @"suckEffect";
+            break;
+        case 6:
+            string = @"oglFlip";
+            break;
+        case 7:
+            string = @"rippleEffect";
+            break;
+        case 8:
+            string = @"pageCurl";
+            break;
+        case 9:
+            string = @"pageUnCurl";
+            break;
+        case 10:
+            string = @"cameraIrisHollowOpen";
+            break;
+        case 11:
+            string = @"cameraIrisHollowClose";
+            break;
+        
+    }
+    
+    return string;
+}
+
+@end
